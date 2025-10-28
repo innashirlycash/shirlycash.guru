@@ -1,0 +1,415 @@
+/* 
+ * Custom CSS Framework
+ * Извлечено из HTML файлов сайта
+ * Сохраняет все оригинальные цвета и стили
+ */
+
+/* === БАЗОВЫЕ СТИЛИ === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* === КОНТЕЙНЕРЫ === */
+.framework-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.framework-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.framework-gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.framework-dark-bg {
+    background: linear-gradient(135deg, #2c3e50 0%, #2a1226 100%);
+    color: #fff;
+}
+
+/* === КНОПКИ === */
+.framework-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.framework-btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.framework-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.framework-btn-success {
+    background: linear-gradient(45deg, #4caf50, #009f50);
+    color: white;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.framework-btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+}
+
+.framework-btn-danger {
+    background: linear-gradient(45deg, #f44336, #850404);
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.4);
+}
+
+.framework-btn-outlined {
+    background: transparent;
+    border: 2px solid #667eea;
+    color: #667eea;
+}
+
+.framework-btn-outlined:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* === ФОРМЫ === */
+.framework-form-group {
+    margin-bottom: 20px;
+}
+
+.framework-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.framework-form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.framework-form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.framework-form-input-error {
+    border-color: #f44336;
+}
+
+/* === ТАРИФНЫЕ ПЛАНЫ === */
+.framework-pricing-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.framework-pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.framework-pricing-card.featured {
+    border: 3px solid #4caf50;
+    transform: scale(1.05);
+}
+
+.framework-pricing-card .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+.framework-pricing-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.8em;
+}
+
+.framework-discount-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* === БАЛАНС И СТАТИСТИКА === */
+.framework-balance-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.framework-balance-amount {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.framework-balance-label {
+    opacity: 0.9;
+    font-size: 1.2em;
+}
+
+/* === ИСТОРИЯ И ТАБЛИЦЫ === */
+.framework-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.framework-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.framework-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.framework-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* === РЕФЕРАЛЬНАЯ СИСТЕМА === */
+.framework-referral-card {
+    background: linear-gradient(135deg, #4caf50 0%, #009f50 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.framework-referral-link {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+/* === СОЦИАЛЬНЫЕ КНОПКИ === */
+.framework-social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.framework-social-btn:hover {
+    transform: scale(1.05);
+}
+
+.framework-social-telegram {
+    background: linear-gradient(45deg, #2196f3, #1976d2);
+}
+
+.framework-social-whatsapp {
+    background: linear-gradient(45deg, #4caf50, #388e3c);
+}
+
+/* === АЛЕРТЫ И УВЕДОМЛЕНИЯ === */
+.framework-alert {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid;
+}
+
+.framework-alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-left-color: #4caf50;
+}
+
+.framework-alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border-left-color: #f44336;
+}
+
+.framework-alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border-left-color: #2196f3;
+}
+
+/* === АНИМАЦИИ === */
+@keyframes framework-fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes framework-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes framework-bounce {
+    0%, 20%, 53%, 80%, 100% { transform: translate3d(0,0,0); }
+    40%, 43% { transform: translate3d(0,-30px,0); }
+    70% { transform: translate3d(0,-15px,0); }
+    90% { transform: translate3d(0,-4px,0); }
+}
+
+.framework-animate-fadeIn {
+    animation: framework-fadeIn 0.6s ease-out;
+}
+
+.framework-animate-pulse {
+    animation: framework-pulse 2s infinite;
+}
+
+.framework-animate-bounce {
+    animation: framework-bounce 1s ease-in-out;
+}
+
+/* === ЗАГРУЗЧИКИ === */
+.framework-loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: framework-spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes framework-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* === АДАПТИВНОСТЬ === */
+@media (max-width: 768px) {
+    .framework-container {
+        padding: 10px;
+    }
+
+    .framework-pricing-card {
+        margin-bottom: 20px;
+    }
+
+    .framework-pricing-card.featured {
+        transform: none;
+    }
+
+    .framework-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .framework-balance-amount {
+        font-size: 2em;
+    }
+}
+
+/* === УТИЛИТЫ === */
+.framework-text-center { text-align: center; }
+.framework-text-left { text-align: left; }
+.framework-text-right { text-align: right; }
+
+.framework-mb-10 { margin-bottom: 10px; }
+.framework-mb-20 { margin-bottom: 20px; }
+.framework-mb-30 { margin-bottom: 30px; }
+
+.framework-mt-10 { margin-top: 10px; }
+.framework-mt-20 { margin-top: 20px; }
+.framework-mt-30 { margin-top: 30px; }
+
+.framework-p-10 { padding: 10px; }
+.framework-p-20 { padding: 20px; }
+.framework-p-30 { padding: 30px; }
+
+.framework-rounded { border-radius: 8px; }
+.framework-rounded-lg { border-radius: 15px; }
+.framework-rounded-xl { border-radius: 25px; }
+
+.framework-shadow { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.framework-shadow-lg { box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+
+.framework-hidden { display: none; }
+.framework-visible { display: block; }
+
+/* === ЦВЕТОВАЯ ПАЛИТРА (из оригинальных файлов) === */
+:root {
+    --framework-primary: #667eea;
+    --framework-primary-dark: #764ba2;
+    --framework-success: #4caf50;
+    --framework-success-dark: #009f50;
+    --framework-danger: #f44336;
+    --framework-danger-dark: #850404;
+    --framework-warning: #ff9800;
+    --framework-info: #2196f3;
+    --framework-dark: #2c3e50;
+    --framework-dark-alt: #2a1226;
+    --framework-light: #f8f9fa;
+    --framework-purple: #7a5a9a;
+    --framework-purple-dark: #5a2550;
+}
+
+/* Дополнительные цветовые классы */
+.framework-bg-primary { background: var(--framework-primary); }
+.framework-bg-success { background: var(--framework-success); }
+.framework-bg-danger { background: var(--framework-danger); }
+.framework-bg-dark { background: var(--framework-dark); }
+
+.framework-text-primary { color: var(--framework-primary); }
+.framework-text-success { color: var(--framework-success); }
+.framework-text-danger { color: var(--framework-danger); }
+.framework-text-dark { color: var(--framework-dark); }
